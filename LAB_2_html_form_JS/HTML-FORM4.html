@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML FORM 4</title>
+    <script src="validateDOB.js"></script> <!-- External JS -->
+</head>
+
+<body>
+    <fieldset>
+        <legend>Date of Birth</legend>
+
+        <label>(DD MM YYYY)</label><br>
+        <input type="number" id="day" min="1" max="31">
+        /
+        <input type="number" id="month" min="1" max="12">
+        /
+        <input type="number" id="year" min="1900" max="2025">
+
+        <hr>
+        <button type="button" onclick="validateDOB()">Submit</button>
+        <p id="msg"></p>
+    </fieldset>
+</body>
+
+</html>
