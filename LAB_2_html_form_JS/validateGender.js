@@ -1,9 +1,9 @@
 function validateGender() {
-    var radios = document.getElementsByName("gender");
-    var msg = document.getElementById("msg");
-    var selected = false;
+    let radios = document.getElementsByName("gender");
+    let msg = document.getElementById("msg");
+    let selected = false;
 
-    for (var i = 0; i < radios.length; i++) {
+    for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             selected = true;
             console.log("Selected gender:", radios[i].value);

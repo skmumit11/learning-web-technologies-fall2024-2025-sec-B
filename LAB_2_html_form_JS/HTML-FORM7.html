@@ -3,6 +3,7 @@
 <head>
 
     <title>HTML FORM 7</title>
+    <script src="profileValidation.js"></script>
 </head>
 <body>
      <fieldset>
@@ -19,14 +20,16 @@
             <tr>
                 <td>
                     <label for="picture">Picture</label>
-                    <input type="file" id="photo" name="photo" accept="image/*">
+                    <input type="file" id="photo" name="photo">
+                    <div id="preview" style="margin-top:10px;"></div>
                 </td>
             </tr>
 
         </table>
         <hr>
         <br>
-        <button type="button">Submit</button>
+        <button type="button" onclick="validateProfile()">Submit</button>
+        <p id="msg"></p>
     </fieldset>
 
 
