@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Registration Form</title>
+</head>
+<body>
+
+    <h2>Dynamic Registration Form Builder</h2>
+
+    <!-- Dropdown to select input field type -->
+    <label for="fieldSelect">Choose a Field Type: </label>
+    <select id="fieldSelect">
+        <option value="">Select Field</option>
+        <option value="username">Username</option>
+        <option value="password">Password</option>
+        <option value="email">Email</option>
+        <option value="dob">Date of Birth</option>
+        <option value="gender">Gender</option>
+        <option value="bloodGroup">Blood Group</option>
+    </select>
+    <button id="addFieldBtn">Add Field</button>
+    
+    <br><br>
+
+    <!-- Form that will display fields dynamically -->
+    <div id="dynamicForm"></div>
+
+    <br><br>
+
+    <!-- Button to submit the form -->
+    <button id="submitBtn">Submit</button>
+
+    <h3>Entered Information:</h3>
+    <div id="userInfo"></div>
+
+    <script src="formjs.js" ></script>
+</body>
+</html>
